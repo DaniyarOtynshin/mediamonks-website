@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+.page__header {
+    padding-bottom: 45px;
+}
