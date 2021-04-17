@@ -7,5 +7,9 @@ body {
 }
 
 .page__header {
-    padding-bottom: 45px;
+    margin-bottom: 45px;
+}
+
+.page__main {
+    margin-bottom: 45px;
 }

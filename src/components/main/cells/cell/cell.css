@@ -1,0 +1,7 @@
+.cell {
+    min-width: 302px;
+    height: 380px;
+    background-color: dimgray;
+    position: relative;
+    transition: all 1.5s ease 0s;
+  }
