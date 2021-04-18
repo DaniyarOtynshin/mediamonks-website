@@ -1,0 +1,10 @@
+.table__time {
+    font-family: 'Roboto Mono', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 92px;
+    text-transform: uppercase;
+    line-height: 1;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}

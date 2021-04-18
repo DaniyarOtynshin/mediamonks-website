@@ -1,0 +1,10 @@
+.table__title {
+    font-family: 'Roboto Mono', serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
