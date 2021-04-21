@@ -7,10 +7,11 @@
 @import url('./components/main/cells/cells.css');
 @import url('./components/main/cells/cell/cell.css');
 @import url('./components/footer/table.css');
-@import url('./components/footer/table__title.css');
-@import url('./components/footer/table__address-column.css');
-@import url('./components/footer/table__office-column.css');
-@import url('./components/footer/table__time-column.css');
+@import url('./components/footer/table__title.css');;
 @import url('./components/footer/table__contact.css');
 @import url('./components/footer/table__time.css');
 @import url('./components/footer/table__office.css');
+@import url('./components/footer/table__row.css');
+@import url('./components/footer/table__title_time.css');
+@import url('./components/footer/table__title_office.css');
+@import url('./components/footer/table__title_address.css');
