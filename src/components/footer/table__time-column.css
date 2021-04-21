@@ -1,0 +1,6 @@
+.table__time-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 220px;
+};
