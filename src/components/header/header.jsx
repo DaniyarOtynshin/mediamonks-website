@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 function Header() {
+
+    const [state, setState] = useState(false);
+    const logo = useRef(null);
+
+    useEffect(() => {
+      window.onscroll = () => {
+        onScroll()
+      }
+    }, []);
+
+    const onScroll = () => {
+        const elementHeight = logo.current.offsetHeight;
+        const elementStart = 4;
+        let elementPoint = elementHeight / elementStart;
+        window.pageYOffset > elementPoint ? setState(true) : setState(false)
+    };
+
+
     return (
-        <header className="page__header header">
+        <header className={`page__header header ${state ? 'header_active' : ''}`}>
             <div className="header__menu menu">
                 <div className="menu__body">
                     <ul className="menu__list">
@@ -14,7 +32,7 @@ function Header() {
                     </ul>
                 </div>
             </div>
-            <div className="header__logo">
+            <div ref={logo} className={`header__logo ${state ? 'header__logo_active' : ''}`}>
                 media monks
             </div>
 
