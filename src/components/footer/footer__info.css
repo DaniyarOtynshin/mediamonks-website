@@ -1,0 +1,8 @@
+.footer__info {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 80px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin: 65px 0 0;
+}

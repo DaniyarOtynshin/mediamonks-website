@@ -1,8 +1,8 @@
 .cells {
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 1px;
     width: 100%;
-    background-color: dimgray;
+    background-color: #333;
     margin: auto auto 45px;
   }

@@ -13,7 +13,7 @@ function Header() {
 
     const onScroll = () => {
         const elementHeight = logo.current.offsetHeight;
-        const elementStart = 4;
+        const elementStart = 6;
         let elementPoint = elementHeight / elementStart;
         window.pageYOffset > elementPoint ? setState(true) : setState(false)
     };
