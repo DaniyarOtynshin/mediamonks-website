@@ -1,37 +1,43 @@
 import React from "react";
 
-class Cell extends React.Component {
-  render() {
-    return this.props.isActive ? (
-      <div
-        className="cell"
-        style={{
-          width: "302px",
-          height: "380px",
-          background: `url("${this.props.src}")
-          no-repeat 0 0 fixed`,
-          transition: "all 0.3s ease-in 0s"
-        }}
-        onMouseEnter={this.props.onMouseEnter}
-      >
-        {this.props.name}
-      </div>
-    ) : (
-      <div
-        className="cell"
-        style={{
-          width: "302px",
-          height: "380px",
-          background: `url("https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b.jpg")
-          no-repeat 0 0 fixed`,
-          transition: "all 0.3s ease 0s"
-        }}
-        onMouseEnter={this.props.onMouseEnter}
-      >
-        {this.props.name}
-      </div>
-    );
-  }
+const Cell = (props) => {
+
+    const [status, setStatus] = React.useState(false);
+
+    const handleChangeImage = () => {
+      status ? setStatus(false) : setStatus(true);
+      return status;
+    };
+    const handlePseudoSelector = () => {
+      return status ? "_before" : "_after";
+    };
+  
+    const checkBackground = () => {
+      return props.name !== props.imageName && handleChangeImage();
+    };
+  
+    React.useEffect(() => {
+      checkBackground();
+    }, [props.imageName]);
+
+    return (
+        <div
+          className={`cell ${
+            props.name !== props.imageName ? handlePseudoSelector() : ""
+          }`}
+          style={{
+            background: `url("${
+              props.name !== props.imageName
+                ? props.src
+                : "https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b.jpg"
+            }")
+              no-repeat 0 0 fixed`
+          }}
+          onMouseEnter={props.onMouseEnter}
+        >
+          {props.name}
+        </div>
+      );
 }
 
 export default Cell;

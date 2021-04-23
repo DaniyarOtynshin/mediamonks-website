@@ -1,7 +1,37 @@
 .cell {
-    min-width: 302px;
-    height: 380px;
-    background-color: dimgray;
-    position: relative;
-    transition: all 1.5s ease 0s;
+  min-width: 302px;
+  height: 380px;
+  background-color: #333;
+  position: relative;
+}
+
+.cell._before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 302px;
+  height: 380px;
+  background-color: #333;
+  animation: dissapear 5s forwards;
+}
+
+.cell._after::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 302px;
+  height: 380px;
+  background-color: #333;
+  animation: dissapear 3s ease-in-out forwards;
+}
+
+@keyframes dissapear {
+  from {
+    background: #333;
   }
+  to {
+    opacity: 0;
+  }
+}
