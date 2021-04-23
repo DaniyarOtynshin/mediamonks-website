@@ -1,8 +1,19 @@
 .cell {
   min-width: 302px;
   height: 380px;
-  background-color: #333;
+  background-color: #1a1a1a;
   position: relative;
+}
+
+.cell._active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 302px;
+  height: 380px;
+  background-color: #1a1a1a;
+  animation: dissapear 3s forwards;
 }
 
 .cell._before::before {
@@ -12,8 +23,8 @@
   left: 0;
   min-width: 302px;
   height: 380px;
-  background-color: #333;
-  animation: dissapear 5s forwards;
+  background-color: #1a1a1a;
+  animation: dissapear 3s forwards;
 }
 
 .cell._after::after {
@@ -23,13 +34,13 @@
   left: 0;
   min-width: 302px;
   height: 380px;
-  background-color: #333;
-  animation: dissapear 3s ease-in-out forwards;
+  background-color: #1a1a1a;
+  animation: dissapear 3s forwards;
 }
 
 @keyframes dissapear {
   from {
-    background: #333;
+    background: #1a1a1a;
   }
   to {
     opacity: 0;

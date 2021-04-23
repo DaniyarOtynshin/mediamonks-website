@@ -23,7 +23,7 @@ const Cell = (props) => {
     return (
         <div
           className={`cell ${
-            props.name !== props.imageName ? handlePseudoSelector() : ""
+            props.name !== props.imageName ? handlePseudoSelector() : "_active"
           }`}
           style={{
             background: `url("${
