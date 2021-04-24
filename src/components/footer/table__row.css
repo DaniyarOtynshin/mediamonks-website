@@ -1,5 +1,5 @@
 .table__row {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 25px 0;
 }
