@@ -14,6 +14,7 @@
   height: 380px;
   background-color: #1a1a1a;
   animation: dissapear 4s forwards;
+  z-index: 2;
 }
 
 .cell._before::before {
@@ -25,6 +26,7 @@
   height: 380px;
   background-color: #1a1a1a;
   animation: dissapear 4s forwards;
+  z-index: 2;
 }
 
 .cell._after::after {
@@ -36,6 +38,7 @@
   height: 380px;
   background-color: #1a1a1a;
   animation: dissapear 4s forwards;
+  z-index: 2;
 }
 
 @keyframes dissapear {

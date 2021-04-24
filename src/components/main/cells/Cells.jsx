@@ -84,6 +84,7 @@ class Cells extends React.Component {
             return (
                 <Cell
                 key={index}
+                id={index + 1}
                 imageName={this.state.name}
                 name={block.name}
                 src={this.handleSrc(index)}

@@ -9,6 +9,8 @@
 @import url('./components/header/menu__link.css');
 @import url('./components/main/cells/cells.css');
 @import url('./components/main/cells/cell/cell.css');
+@import url('./components/main/cells/cell/cell__number.css');
+@import url('./components/main/cells/cell/cell__name.css');
 @import url('./components/footer/table.css');
 @import url('./components/footer/table__title.css');;
 @import url('./components/footer/table__contact.css');

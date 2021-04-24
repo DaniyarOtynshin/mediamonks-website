@@ -20,22 +20,28 @@ const Cell = (props) => {
         checkBackground();
     }, [props.imageName]);
 
+    const style = {
+        background: `url("${props.src}") no-repeat 0 0 fixed`
+    }
+
     return (
         <div
             className={`cell ${
                 props.name !== props.imageName ? handlePseudoSelector() : "_active"
             }`}
-            style={{
-                background: `url("${
+            style={
                 props.name !== props.imageName
-                ? props.src
-                : "https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b.jpg"
-                }")
-                no-repeat 0 0 fixed`
-            }}
+                ? { background: `url("${props.src}") no-repeat 0 0 fixed` }
+                : style
+            }
             onMouseEnter={props.onMouseEnter}
         >
-            {props.name}
+            <p className="cell__number">
+                { props.id < 10 ? "0" + props.id : props.id }
+            </p>
+            <p className="cell__name">
+                { props.name }
+            </p>
         </div>
     );
 }
