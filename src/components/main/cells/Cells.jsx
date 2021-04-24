@@ -1,57 +1,57 @@
 import React from "react";
 import Cell from "./cell/Cell";
 
-import waterPath from '../../../assets/wallpapers/water.jpg';
-import canyonPath from '../../../assets/wallpapers/canyon.jpg';
-import castlePath from '../../../assets/wallpapers/castle.jpg';
-import circlePath from '../../../assets/wallpapers/circle.jpg';
-import cityPath from '../../../assets/wallpapers/city.jpg';
-import manPath from '../../../assets/wallpapers/man.jpg';
-import mountPath from '../../../assets/wallpapers/mount.jpg';
-import oceanPath from '../../../assets/wallpapers/ocean.jpg';
-import riverPath from '../../../assets/wallpapers/river.jpg';
-import roadPath from '../../../assets/wallpapers/road.jpg';
+import compaignsAndContentPath from '../../../assets/wallpapers/compaignsandcontent.jpg';
+import filmsPath from '../../../assets/wallpapers/films.jpg';
+import mobilePath from '../../../assets/wallpapers/mobile.jpg';
+import gamesPath from '../../../assets/wallpapers/games.jpg';
+import vfxPath from '../../../assets/wallpapers/vfx.jpg';
+import animationPath from '../../../assets/wallpapers/animation.jpg';
+import vrPath from '../../../assets/wallpapers/vr.jpg';
+import experimentalPath from '../../../assets/wallpapers/experimental.jpg';
+import richMediaPath from '../../../assets/wallpapers/richmedia.jpg';
+import forGoodPath from '../../../assets/wallpapers/forgood.jpg';
 
 let blocksInfo = [
   {
-    name: "Water",
-    src: waterPath
+    name: "compaigns and content",
+    src: compaignsAndContentPath
   },
   {
-    name: "Canyon",
-    src: canyonPath
+    name: "films",
+    src: filmsPath
   },
   {
-    name: "Castle",
-    src: castlePath
+    name: "mobile & platforms",
+    src: mobilePath
   },
   {
-    name: "Circle",
-    src: circlePath
+    name: "games",
+    src: gamesPath
   },
   {
-    name: "City",
-    src: cityPath
+    name: "vfx & post",
+    src: vfxPath
   },
   {
-    name: "Man",
-    src: manPath
+    name: "anmation",
+    src: animationPath
   },
   {
-    name: "Mount",
-    src: mountPath
+    name: "vr",
+    src: vrPath
   },
   {
-    name: "Ocean",
-    src: oceanPath
+    name: "experimental",
+    src: experimentalPath
   },
   {
-    name: "River",
-    src: riverPath
+    name: "rich media",
+    src: richMediaPath
   },
   {
-    name: "Road",
-    src: roadPath
+    name: "for good",
+    src: forGoodPath
   },
 ];
 
