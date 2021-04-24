@@ -1,8 +1,9 @@
 .menu__link {
     display: block;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'klavika', serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 2px;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;

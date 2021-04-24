@@ -5,39 +5,39 @@ const Cell = (props) => {
     const [status, setStatus] = React.useState(false);
 
     const handleChangeImage = () => {
-      status ? setStatus(false) : setStatus(true);
-      return status;
+        status ? setStatus(false) : setStatus(true);
+        return status;
     };
     const handlePseudoSelector = () => {
-      return status ? "_before" : "_after";
+        return status ? "_before" : "_after";
     };
   
     const checkBackground = () => {
-      return props.name !== props.imageName && handleChangeImage();
+        return props.name !== props.imageName && handleChangeImage();
     };
   
     React.useEffect(() => {
-      checkBackground();
+        checkBackground();
     }, [props.imageName]);
 
     return (
         <div
-          className={`cell ${
-            props.name !== props.imageName ? handlePseudoSelector() : "_active"
-          }`}
-          style={{
-            background: `url("${
-              props.name !== props.imageName
+            className={`cell ${
+                props.name !== props.imageName ? handlePseudoSelector() : "_active"
+            }`}
+            style={{
+                background: `url("${
+                props.name !== props.imageName
                 ? props.src
                 : "https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b.jpg"
-            }")
-              no-repeat 0 0 fixed`
-          }}
-          onMouseEnter={props.onMouseEnter}
+                }")
+                no-repeat 0 0 fixed`
+            }}
+            onMouseEnter={props.onMouseEnter}
         >
-          {props.name}
+            {props.name}
         </div>
-      );
+    );
 }
 
 export default Cell;
