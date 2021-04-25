@@ -3,7 +3,7 @@
     justify-content: space-between;
     height: 90px;
     background-color: #1a1a1a;
-    z-index: 2;
+    z-index: 5;
     position: sticky;
     top: 0;
 }

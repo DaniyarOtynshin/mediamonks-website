@@ -42,6 +42,10 @@ const Cell = (props) => {
             <p className="cell__name">
                 { props.name }
             </p>
+            <div className="x-top"></div>
+            <div className="x-bottom"></div>
+            <div className="y-left"></div>
+            <div className="y-right"></div>
         </div>
     );
 }

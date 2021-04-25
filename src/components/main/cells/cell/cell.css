@@ -1,8 +1,9 @@
 .cell {
-  min-width: 302px;
+  flex: 0 0 calc(20% - 0.8px);
   height: 380px;
   background-color: #1a1a1a;
   position: relative;
+  box-sizing: border-box;
 }
 
 .cell._active::before {
@@ -10,7 +11,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 302px;
+  width: 100%;
   height: 380px;
   background-color: #1a1a1a;
   animation: dissapear 4s forwards;
@@ -22,7 +23,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 302px;
+  width: 100%;
   height: 380px;
   background-color: #1a1a1a;
   animation: dissapear 4s forwards;
@@ -34,7 +35,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 302px;
+  width: 100%;
   height: 380px;
   background-color: #1a1a1a;
   animation: dissapear 4s forwards;
