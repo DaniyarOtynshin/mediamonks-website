@@ -1,7 +1,8 @@
 .table {
     font-family: 'klavika', serif;
+    color: #fff;
     max-width: 1250px;
-    padding: 0 0 0 45px;
+    padding: 0 0 0 55px;
 }
 
 .table__contact {
@@ -13,28 +14,39 @@
     max-width: 175px;
 }
 
-.table__office {
-    font-weight: 700;
-    color: #fff;
-    font-size: 92px;
-    text-transform: uppercase;
-    line-height: 62px;
-    width: 500px;
-}
-
 .table__row {
     display: flex;
     justify-content: space-between;
     margin: 25px 0;
 }
 
-.table__time {
+.table__office {
+    display: flex;
     font-weight: 700;
-    color: #fff;
     font-size: 92px;
     text-transform: uppercase;
     line-height: 62px;
-    width: 190px;
+    min-width: 770px;
+    margin: 0;
+    position: relative;
+}
+
+.table__office::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
+    border-bottom: 1px solid #fff;
+}
+
+.table__time {
+    margin: 0 35px 0 0;
+}
+
+.table__open {
+    max-width: 500px;
 }
 
 .table__title_address {
