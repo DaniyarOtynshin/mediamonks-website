@@ -1,6 +1,6 @@
 const Table = () => {
     return (
-        <div className="footer__table table">
+        <div className="page__table table">
                 <div className="table__row">
                     <div className="table__title table__title_time">office time</div>
                     <div className="table__title table__title_office">office open</div>

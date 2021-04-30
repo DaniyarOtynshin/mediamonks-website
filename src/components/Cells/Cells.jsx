@@ -79,20 +79,22 @@ class Cells extends React.Component {
 
     render() {
         return (
-        <div className="cells">
-            {blocksInfo.map((block, index) => {
-            return (
-                <Cell
-                key={index}
-                id={index + 1}
-                imageName={this.state.name}
-                name={block.name}
-                src={this.handleSrc(index)}
-                onMouseEnter={() => this.onMouseEnter(index)}
-                />
-            );
-            })}
-        </div>
+            <div className="cells">
+                {
+                    blocksInfo.map((block, index) => {
+                        return (
+                            <Cell
+                                key={index}
+                                id={index + 1}
+                                imageName={this.state.name}
+                                name={block.name}
+                                src={this.handleSrc(index)}
+                                onMouseEnter={() => this.onMouseEnter(index)}
+                            />
+                        );
+                    })
+                }
+            </div>
         );
     }
 }
