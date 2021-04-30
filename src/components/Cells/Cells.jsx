@@ -1,16 +1,16 @@
 import React from "react";
-import Cell from "./cell/Cell";
+import Cell from "../Cell/Cell";
 
-import compaignsAndContentPath from '../../../assets/wallpapers/compaignsandcontent.jpg';
-import filmsPath from '../../../assets/wallpapers/films.jpg';
-import mobilePath from '../../../assets/wallpapers/mobile.jpg';
-import gamesPath from '../../../assets/wallpapers/games.jpg';
-import vfxPath from '../../../assets/wallpapers/vfx.jpg';
-import animationPath from '../../../assets/wallpapers/animation.jpg';
-import vrPath from '../../../assets/wallpapers/vr.jpg';
-import experimentalPath from '../../../assets/wallpapers/experimental.jpg';
-import richMediaPath from '../../../assets/wallpapers/richmedia.jpg';
-import forGoodPath from '../../../assets/wallpapers/forgood.jpg';
+import compaignsAndContentPath from '../../assets/wallpapers/compaignsandcontent.jpg';
+import filmsPath from '../../assets/wallpapers/films.jpg';
+import mobilePath from '../../assets/wallpapers/mobile.jpg';
+import gamesPath from '../../assets/wallpapers/games.jpg';
+import vfxPath from '../../assets/wallpapers/vfx.jpg';
+import animationPath from '../../assets/wallpapers/animation.jpg';
+import vrPath from '../../assets/wallpapers/vr.jpg';
+import experimentalPath from '../../assets/wallpapers/experimental.jpg';
+import richMediaPath from '../../assets/wallpapers/richmedia.jpg';
+import forGoodPath from '../../assets/wallpapers/forgood.jpg';
 
 let blocksInfo = [
   {

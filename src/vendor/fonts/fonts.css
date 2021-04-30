@@ -3,7 +3,7 @@
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/droidserif-regular-webfont.woff") format("woff");
+    src: url("./droidserif-regular-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style:  italic;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/droidserif-italic-webfont.woff") format("woff");
+    src: url("./droidserif-italic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/klavikach-regularcond-webfont.woff") format("woff");
+    src: url("./klavikach-regularcond-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-style:  normal;
     font-weight: 300;
     font-display: swap;
-    src: url("../fonts/klavikach-lightcond-webfont.woff") format("woff");
+    src: url("./klavikach-lightcond-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
     font-style:  normal;
     font-weight: 500;
     font-display: swap;
-    src: url("../fonts/klavikach-mediumcond-webfont.woff") format("woff");
+    src: url("./klavikach-mediumcond-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -43,5 +43,5 @@
     font-style:  normal;
     font-weight: 700;
     font-display: swap;
-    src: url("../fonts/klavikach-boldcond-webfont.woff") format("woff");
+    src: url("./klavikach-boldcond-webfont.woff") format("woff");
 }

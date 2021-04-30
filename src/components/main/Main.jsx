@@ -1,5 +1,5 @@
 import React from 'react';
-import Cells from './cells/Cells';
+import Cells from '../Cells/Cells';
 
 function Main() {
     return (
