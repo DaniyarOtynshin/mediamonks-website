@@ -1,8 +1,8 @@
 .header {
+    height: 80px;
     display: flex;
     justify-content: space-between;
-    height: 90px;
-    background-color: #1a1a1a;
+    background-color: #1a1a1a; /* sticky */
     z-index: 5;
     position: sticky;
     top: 0;

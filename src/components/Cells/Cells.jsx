@@ -79,7 +79,7 @@ class Cells extends React.Component {
 
     render() {
         return (
-        <div className="page__main cells">
+        <div className="cells">
             {blocksInfo.map((block, index) => {
             return (
                 <Cell

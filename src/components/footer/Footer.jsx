@@ -8,14 +8,13 @@ import linkedinPath from '../../assets/in.svg';
 function Footer() {
     return (
         <footer className="page__footer footer">
-            
-        <div className="footer__info">
-            <a href="" className="footer__item"><img src={ instagramPath } className="footer__icon" /></a>
-            <a href="" className="footer__item"><img src={ twitterPath } className="footer__icon" /></a>
-            <a href="" className="footer__item"><img src={ facebookPath } className="footer__icon" /></a>
-            <a href="" className="footer__item"><img src={ linkedinPath } className="footer__icon" /></a>
-        </div>
-        <p className="footer__privacy">© MediaMonks | View privacy notice</p>
+            <div className="footer__info">
+                <a href="" className="footer__item"><img src={ instagramPath } className="footer__icon" /></a>
+                <a href="" className="footer__item"><img src={ twitterPath } className="footer__icon" /></a>
+                <a href="" className="footer__item"><img src={ facebookPath } className="footer__icon" /></a>
+                <a href="" className="footer__item"><img src={ linkedinPath } className="footer__icon" /></a>
+            </div>
+            <p className="footer__privacy">© MediaMonks | View privacy notice</p>
         </footer>
     )
 }
