@@ -1,10 +1,15 @@
+.footer {
+    width: 100%;
+}
+
 .footer__icon {
+    font-family: 'klavika', serif;
     width: 25px;
     height: 25px;
+    height: 80px;
 }
 
 .footer__privacy {
-    font-family: 'Roboto Mono', serif;
     font-weight: 400;
     color: #666;
     font-size: 14px;
@@ -16,20 +21,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid #333;
+    border-left: 1px solid #484848;
     width: 80px;
+    height: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Droid', sans-serif;
+    line-height: 36px;
+    font-weight: 700;
+    color: #666;
+    transition: all 0.2s ease 0s;
+    transform-origin: center;
+}
+
+.footer__item:hover {
+    color: #fff;
+    background-color: #427197;
 }
 
 .footer__info {
     display: flex;
     justify-content: flex-end;
-    min-height: 80px;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    margin: 65px 0 0;
-}
-
-.footer__icon {
-    width: 25px;
-    height: 25px;
+    border: 1px solid #333;
 }

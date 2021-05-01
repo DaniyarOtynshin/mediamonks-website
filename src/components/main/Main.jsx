@@ -3,7 +3,7 @@ import Cells from '../Cells/Cells';
 
 function Main() {
     return (
-        <main className="main page__main">
+        <main className="main page__main page__section">
             <Cells />
         </main>
     )

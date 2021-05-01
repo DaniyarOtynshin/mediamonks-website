@@ -20,7 +20,7 @@ function Header() {
 
 
     return (
-        <header className={`page__header header ${state ? 'header_active' : ''}`}>
+        <header className={`page__section page__header header ${state ? 'header_active' : ''}`}>
             <div className="header__menu menu">
                 <div className="menu__body">
                     <ul className="menu__list">
