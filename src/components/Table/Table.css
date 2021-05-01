@@ -5,14 +5,23 @@
     padding: 0 60px;
 }
 
+.table__row {
+    min-height: 105px;
+}
+
+.table__row_title {
+    min-height: fit-content;
+}
+
 .table__title {
+    display: inline-block;
     font-weight: 300;
     color: #fff;
     font-size: 18px;
     letter-spacing: 2.52px;
     text-transform: uppercase;
     line-height: 1;
-};
+}
 
 .table__title_time {
     width: 15%;
@@ -22,12 +31,11 @@
 .table__title_open {
     width: 41%;
     padding-bottom: 15px;
-    padding-right: 80px;
 }
 
 .table__title_address {
-    width: 280px;
-    padding-bottom: 15px;
+    width: 220px;
+    padding-bottom: 25px;
 }
 
 .table__title_contact {
@@ -35,6 +43,7 @@
 }
 
 .table__time {
+    display: inline-block;
     width: 15%;
     font-weight: 700;
     font-size: 6vw;
@@ -42,9 +51,25 @@
     text-transform: uppercase;
     padding-right: 3%;
     margin: 0 0 25px;
+    vertical-align: top;
+    position: relative;
+}
+
+.table__time._closed {
+    color: #272727;
+}
+
+.table__time._closed::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    right: 0;
+    border-bottom: 1px solid #272727;
 }
 
 .table__open {
+    display: inline-block;
     width: 41%;
     font-weight: 700;
     font-size: 6vw;
@@ -52,9 +77,25 @@
     text-transform: uppercase;
     padding: 0;
     margin: 0 0 25px;
+    vertical-align: top;
+    position: relative;
+}
+
+.table__open._closed {
+    color: #272727;
+}
+
+.table__open._closed::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    right: 5px;
+    border-bottom: 1px solid #272727;
 }
 
 .table__contact {
+    display: inline-block;
     font-family: 'driod', serif;
     font-weight: 400;
     color: #666;
@@ -63,29 +104,35 @@
 }
 
 .table__contact_address {
+    display: inline-block;
     width: 220px;
     padding-right: 28px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    vertical-align: top;
 }
 
 .table__contact_contact {
     width: 210px;
     padding: 0;
-}
-
-.table__row {
-    display: flex;
-    min-height: 105px;
-}
-
-.table__row_title {
-    min-height: fit-content;
+    vertical-align: top;
 }
 
 @media (max-width: 1190px) {
 
+    .table__row {
+        min-height: 80px;
+    }
+
+    .table__row_title {
+        min-height: fit-content;
+    }
+
     .table__title_address {
-        width: 220px;
+        width: 175px;
+    }
+
+    .table__title_contact {
+        width: 190px;
     }
 
     .table__time {
@@ -113,13 +160,3 @@
         padding-bottom: 15px;
     }
 }
-
-/* .table__office::before:not(:first-child) {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% - 30px);
-    border-bottom: 1px solid #fff;
-} */
