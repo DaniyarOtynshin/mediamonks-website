@@ -1,7 +1,6 @@
 .cell {
   flex: 0 0 calc(20% - 0.8px);
   height: 380px;
-  background-color: #1a1a1a;
   position: relative;
   box-sizing: border-box;
 }
@@ -14,8 +13,38 @@
   width: 100%;
   height: 380px;
   background-color: #1a1a1a;
-  animation: dissapear 4s forwards;
   z-index: 2;
+}
+
+.cell._active::after {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: 50%;
+  width: 1px;
+  height: 128%;
+  transform: rotate(38.5deg);
+  background-color: #333;
+  z-index: 2;
+}
+
+.cell__letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'klavika', sans-serif;
+  font-weight: 900;
+  font-size: 300px;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 0;
+  z-index: 3;
+}
+
+.cell._active .cell__letter {
+  opacity: 1;
 }
 
 .cell._before::before {

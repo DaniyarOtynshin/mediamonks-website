@@ -42,6 +42,9 @@ const Cell = (props) => {
             <p className="cell__name">
                 { props.name }
             </p>
+            <span className="cell__letter">
+                { props.name[0] }
+            </span>
             <div className="x-top"></div>
             <div className="x-bottom"></div>
             <div className="y-left"></div>
