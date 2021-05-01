@@ -45,10 +45,12 @@ const Cell = (props) => {
             <span className="cell__letter">
                 { props.name[0] }
             </span>
-            <div className="x-top"></div>
-            <div className="x-bottom"></div>
-            <div className="y-left"></div>
-            <div className="y-right"></div>
+            <div className="borders">
+                <span className="x-top"></span>
+                <span className="x-bottom"></span>
+                <span className="y-left"></span>
+                <span className="y-right"></span>
+            </div>
         </div>
     );
 }

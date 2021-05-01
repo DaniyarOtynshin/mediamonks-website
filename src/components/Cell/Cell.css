@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.cell:hover {
+  cursor: pointer;
+}
+
 .cell._active::before {
   content: "";
   position: absolute;
@@ -16,6 +20,7 @@
   z-index: 2;
 }
 
+/* Fix diagonal line */
 .cell._active::after {
   content: "";
   position: absolute;
@@ -41,6 +46,7 @@
   line-height: 1;
   opacity: 0;
   z-index: 3;
+  transition: all 0.3s ease 0s;
 }
 
 .cell._active .cell__letter {
@@ -98,11 +104,130 @@
   z-index: 3;
 }
 
+.cell:hover .x-top {
+  animation: line-top 0.1s ease-in-out forwards;
+}
+
+.cell:hover .y-right {
+  animation: line-right 0.1s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+
+.cell:hover .x-bottom {
+  animation: line-bottom 0.1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.cell:hover .y-left {
+  animation: line-left 0.1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.borders {
+  opacity: 0;
+}
+
+.cell._active .borders {
+  opacity: 1;
+}
+
+.x-top {
+  position: absolute;
+  top: 34px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 0.5px;
+  z-index: 3;
+  background-color: #fff;
+}
+
+.x-bottom {
+  position: absolute;
+  top: calc(100% - 20px);
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 0.5px;
+  z-index: 3;
+  background-color: #fff;
+}
+
+.y-left {
+  position: absolute;
+  top: 34px;
+  left: 10px;
+  width: 0.5px;
+  height: 86%;
+  z-index: 3;
+  background-color: #fff;
+}
+
+.y-right {
+  position: absolute;
+  top: 34px;
+  left: calc(100% - 10px);
+  width: 0.5px;
+  height: 86%;
+  z-index: 3;
+  background-color: #fff;
+}
+
 @keyframes dissapear {
   from {
     background: #1a1a1a;
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes line-top {
+  from {
+    opacity: 0;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+  to {
+    opacity: 1;
+    left: calc(100% - 10px);
+    width: 0;
+  }
+}
+
+@keyframes line-right {
+  from {
+    opacity: 0;
+    top: 34px;
+    height: 86%;
+  }
+  to {
+    opacity: 1;
+    top: calc(86% + 34px);
+    height: 0;
+  }
+}
+
+@keyframes line-bottom {
+  from {
+    opacity: 0;
+    left: calc(100% - 10px);
+    width: calc(100% - 20px);
+  }
+  to {
+    opacity: 1;
+    left: 10px;
+    width: 0;
+  }
+}
+
+@keyframes line-left {
+  from {
+    opacity: 0;
+    top: calc(86% + 34px);
+    height: 86%;
+  }
+  to {
+    opacity: 1;
+    top: 34px;
+    height: 0;
   }
 }
