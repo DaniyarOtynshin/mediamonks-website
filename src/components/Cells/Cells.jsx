@@ -60,7 +60,7 @@ class Cells extends React.Component {
         super(props);
         this.state = {
             index: -1,
-            src: "https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b.jpg"
+            src: blocksInfo[0].src
         };
         this.interval = null;
     }

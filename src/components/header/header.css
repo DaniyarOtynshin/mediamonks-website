@@ -1,16 +1,23 @@
 .header {
-    height: 80px;
+    height: 160px;
     max-width: 1920px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    background-color: #1a1a1a; /* sticky */
-    z-index: 5;
-    position: sticky;
-    top: 0;
+    justify-content: flex-end;
+    position: relative;
 }
 
-.header_active {
+.header__menu {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a; /* sticky */
+    z-index: 4;
+}
+
+.header__menu_active {
     border-bottom: 1px solid #333;
 }
 
@@ -26,6 +33,7 @@
     width: 128px;
     height: 128px;
     transition: all 0.3s ease 0s;
+    z-index: 5;
 }
 
 .header__logo_active {

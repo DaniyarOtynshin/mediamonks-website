@@ -1,18 +1,22 @@
-import './App.css';
+import React from 'react';
+import { Route } from 'react-router-dom';
+
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Table from '../Table/Table';
 
 function App() {
-  return (
-    <div className="page__content">
-      <Header />
-      <Main />
-      <Table />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="page__content">
+            <Header />
+            <Route exact path="/">
+                <Main />
+            </Route>
+            <Table />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
