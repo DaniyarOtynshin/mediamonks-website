@@ -31,6 +31,7 @@ const Cell = (props) => {
                 : null
             }
             onMouseEnter={props.onMouseEnter}
+            onMouseLeave={props.onMouseLeave}
         >
             <p className="cell__number">
                 { props.id < 10 ? "0" + props.id : props.id }

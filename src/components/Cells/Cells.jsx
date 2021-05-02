@@ -56,16 +56,27 @@ let blocksInfo = [
 ];
 
 class Cells extends React.Component {
-    constructor(data) {
-        super();
-        this.data = data;
+    constructor(props) {
+        super(props);
         this.state = {
             index: -1,
             src: "https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b.jpg"
         };
+        this.interval = null;
     }
 
-    onMouseEnter(index) {
+    componentDidMount() {
+        this.handleAnimations()
+    }
+
+    handleAnimations() {
+        this.interval = setInterval(() => {
+            const randomInteger = Math.floor(Math.random() * (blocksInfo.length - 1));
+            this.changeBackgroundImage(randomInteger)
+        }, 4000)
+    }
+
+    changeBackgroundImage(index) {
         this.setState({
             src: blocksInfo[index].src,
             name: blocksInfo[index].name,
@@ -73,8 +84,17 @@ class Cells extends React.Component {
         });
     }
 
+    onMouseEnter(index) {
+        this.changeBackgroundImage(index)
+        clearInterval(this.interval)
+    }
+
+    onMouseLeave() {
+        this.handleAnimations();
+    }
+
     handleSrc(index) {
-        return index !== this.state.index ? this.state.src : "";
+        return index !== this.state.index ? this.state.src : null;
     }
 
     render() {
@@ -90,6 +110,7 @@ class Cells extends React.Component {
                                 name={block.name}
                                 src={this.handleSrc(index)}
                                 onMouseEnter={() => this.onMouseEnter(index)}
+                                onMouseLeave={this.onMouseLeave.bind(this)}
                             />
                         );
                     })
