@@ -15,9 +15,9 @@
 
 .table__title {
     display: inline-block;
-    font-weight: 300;
     color: #fff;
     font-size: 18px;
+    font-weight: 300;
     letter-spacing: 2.52px;
     text-transform: uppercase;
     line-height: 1;
@@ -96,7 +96,7 @@
 
 .table__contact {
     display: inline-block;
-    font-family: 'driod', serif;
+    font-family: 'droid', serif;
     font-weight: 400;
     color: #666;
     font-size: 14px;

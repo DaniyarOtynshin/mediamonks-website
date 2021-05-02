@@ -1,0 +1,57 @@
+.about {
+    font-family: 'klavika', sans-serif;
+    background-color: #fff;
+}
+
+.about__cover {
+    width: 100%;
+    height: 478px;
+    object-fit: cover;
+}
+
+.content__text {
+    max-width: 1040px;
+    padding: 120px 80px 113px;
+    margin: 0 auto;
+}
+
+.content__title {
+    margin: 0 0 71px;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.content__paragraph {
+    margin: 37px 0 0;
+    max-width: 880px;
+    font-family: 'droid', sans-serif;
+    font-size: 20px;
+    line-height: 1.85;
+    color: #666;
+}
+
+.content__paragraph:first-child {
+    margin-top: 0;
+}
+
+.content__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #666;
+    width: 225px;
+    height: 80px;
+    border: 2px solid #000;
+}
+
+.content__link:hover {
+    background-color: #000;
+}
