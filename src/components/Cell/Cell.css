@@ -115,15 +115,19 @@
 }
 
 .cell._active .y-right {
-    animation: line-right 0.2s ease-in-out 0.1s forwards;
+    animation: line-right 0.1s ease-in-out 0s forwards;
 }
 
 .cell._active .x-bottom {
-    animation: line-bottom 0.2s ease-in-out 0.2s forwards;
+    animation: line-bottom 0.2s ease-in-out 0s forwards;
 }
 
 .cell._active .y-left {
-    animation: line-left 0.1s ease-in-out 0.2s forwards;
+    animation: line-left 0.2s ease-in-out 0.2s forwards;
+}
+
+.cell._active .cell__name {
+    animation: name-dissapear 0.15s ease-in-out forwards;
 }
 
 .borders {
@@ -184,15 +188,16 @@
 }
 
 @keyframes line-top {
-    from {
+    0% {
         opacity: 0;
-        left: 10px;
         width: calc(100% - 20px);
     }
-    to {
+    50% {
         opacity: 1;
-        left: calc(100% - 10px);
         width: 0;
+    }
+    100% {
+        width: 15px;
     }
 }
 
@@ -212,12 +217,10 @@
 @keyframes line-bottom {
     from {
         opacity: 0;
-        left: calc(100% - 10px);
         width: calc(100% - 20px);
     }
     to {
         opacity: 1;
-        left: 10px;
         width: 0;
     }
 }
@@ -225,12 +228,25 @@
 @keyframes line-left {
     from {
         opacity: 0;
-        top: calc(86% + 34px);
         height: 86%;
     }
     to {
         opacity: 1;
-        top: 34px;
         height: 0;
+    }
+}
+
+@keyframes name-dissapear {
+    0% { 
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
