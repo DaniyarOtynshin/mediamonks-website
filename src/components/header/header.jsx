@@ -24,11 +24,11 @@ function Header() {
             <div className={`menu header__menu ${state ? 'header__menu_active' : null}`}>
                 <div className="menu__body">
                     <ul className="menu__list">
-                        <li><a href="#" className="menu__link">about</a></li>
-                        <li><a href="#" className="menu__link">careers</a></li>
-                        <li><a href="#" className="menu__link">contact</a></li>
-                        <li><a href="#" className="menu__link">blog</a></li>
-                        <li><a href="#" className="menu__link">watch our mixtape</a></li>
+                        <li className="menu__item"><a href="#" className="menu__link">about</a></li>
+                        <li className="menu__item"><a href="#" className="menu__link">careers</a></li>
+                        <li className="menu__item"><a href="#" className="menu__link">contact</a></li>
+                        <li className="menu__item"><a href="#" className="menu__link">blog</a></li>
+                        <li className="menu__item"><a href="#" className="menu__link">watch our mixtape</a></li>
                     </ul>
                 </div>
             </div>

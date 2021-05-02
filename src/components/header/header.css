@@ -50,13 +50,17 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #666;
-    padding: 31px 0 0 45px;
+    padding: 0;
     transition: all 0.3s ease 0s;
     outline: none;
 }
 
 .menu__link:hover {
     color: #fff;
+}
+
+.menu__item {
+    padding: 31px 22px 30px;
 }
 
 .menu__list {
