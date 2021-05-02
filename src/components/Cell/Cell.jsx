@@ -20,10 +20,6 @@ const Cell = (props) => {
         checkBackground();
     }, [props.imageName]);
 
-    const style = {
-        background: `url("${props.src}") no-repeat 0 0 fixed`
-    }
-
     return (
         <div
             className={`cell ${
@@ -32,7 +28,7 @@ const Cell = (props) => {
             style={
                 props.name !== props.imageName
                 ? { background: `url("${props.src}") no-repeat 0 0 fixed` }
-                : style
+                : null
             }
             onMouseEnter={props.onMouseEnter}
         >
@@ -45,6 +41,9 @@ const Cell = (props) => {
             <span className="cell__letter">
                 { props.name[0] }
             </span>
+            <svg className="cell__diagonal">
+                <line className="cell__line" x1="100%" y1="0" x2="0" y2="100%"></line>
+            </svg>
             <div className="borders">
                 <span className="x-top"></span>
                 <span className="x-bottom"></span>
