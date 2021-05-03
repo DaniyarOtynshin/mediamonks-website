@@ -98,3 +98,25 @@
     line-height: 1;
     color: #1a1a1a;
 }
+
+.social_about {
+    margin-top: 109px;
+    max-width: fit-content;
+    margin-left: auto;
+}
+
+.social__item_about {
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+}
+
+.social__follow {
+    font-family: 'klavika', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 40px;
+    color: #666;
+}

@@ -17,7 +17,7 @@
     padding: 20px 0 20px 15px;
 }
 
-.footer__item {
+.social__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +34,16 @@
     outline: none;
 }
 
-.footer__item:hover {
+.social__item:hover {
     color: #fff;
     background-color: #427197;
 }
 
-.footer__info {
+.social {
     display: flex;
     justify-content: flex-end;
+}
+
+.footer__social {
     border: 1px solid #333;
 }
