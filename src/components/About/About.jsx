@@ -1,8 +1,9 @@
 import headerPath from '../../assets/about_header.jpg';
+import Carousel from '../Carousel/Carousel';
 
 const About = () => {
     return (
-        <section className="page__about about">
+        <section className="page__section page__about about">
             <img src={ headerPath } alt="Header" className="about__cover"/>
             <div className="about__content content">
                 <article className="content__text">
@@ -16,8 +17,9 @@ const About = () => {
                     <p className="content__paragraph">
                     Founded in 2001 and rooted in digital, you can find MediaMonks anywhere on the Web as well as in San Francisco, Los Angeles, Mountain View, Sandpoint, Toronto, New York, Mexico City, Buenos Aires, São Paulo, Dublin, London, Amsterdam, Hilversum, Cape Town, Stockholm, Kiev, Dnepr, Moscow, Nur-Sultan, Dubai, Mumbai, Bangalore, Delhi, Singapore, Shanghai, Sydney, Melbourne, and Auckland.
                     </p>
-                    <a href="#" className="content__link">watch our mixtape</a>
+                    <a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="content__link">watch our mixtape</a>
                 </article>
+                <Carousel />
             </div>
         </section>
     )

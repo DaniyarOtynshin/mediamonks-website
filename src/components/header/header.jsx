@@ -28,7 +28,7 @@ function Header() {
                         <li className="menu__item"><a href="#" className="menu__link">careers</a></li>
                         <li className="menu__item"><a href="#" className="menu__link">contact</a></li>
                         <li className="menu__item"><a href="#" className="menu__link">blog</a></li>
-                        <li className="menu__item"><a href="#" className="menu__link">watch our mixtape</a></li>
+                        <li className="menu__item"><a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="menu__link">watch our mixtape</a></li>
                     </ul>
                 </div>
             </div>
