@@ -25,6 +25,98 @@ const Careers = () => {
                     </li>
                 </ul>
             </div>
+            <ul className="careers__vacancies">
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+                <li className="careers__vacancies-item">
+                    <div className="careers__vacancies-content">
+                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
+                        <span className="careers__vacancies-office">
+                            Amsterdam
+                            <span>Client Services</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <h2 className="careers__applications">open applications</h2>
+            <div className="careers__open-open">
+                <div className="careers__inner">
+                    <p className="careers__open-open-text">Nothing that matches your skill set? We have awesome jobs for awesome people. Tell us about yourself and your trade and we may dream up your digital dream job just like that. Seriously, we’re open to open applications.</p>
+                </div>
+                <div className="careers__inner">
+                    <button className="careers__button">apply for a job</button>
+                </div>
+            </div>
         </section>
     )
 };

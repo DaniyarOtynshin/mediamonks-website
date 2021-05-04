@@ -19,6 +19,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-bottom: 46px;
+    position: relative;
 }
 
 .careers__filter-office-item {
@@ -39,13 +41,17 @@
 }
 
 .careers__filter-office-item_button {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 28.4px);
     padding: 0;
-    float: right;
     transition: 0.4s;
 }
 
 
 .block-button {
+    display: block;
     background-color: #1a1a1a;
     border: 1px solid #333;
     border-radius: 0;
@@ -57,6 +63,7 @@
 .block-text {
     display: flex;
     flex-direction: column;
+    font-style: normal;
     align-items: flex-start;
     max-width: fit-content;
     color: #fff;
@@ -86,4 +93,109 @@
 
 .block-button:hover .block-text {
     color: #000;
+}
+
+.careers__vacancies {
+    border-top: 1px solid #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.careers__vacancies-item {
+    height: 320px;
+    width: 25%;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    list-style: none;
+}
+
+.careers__vacancies-content {
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.careers__vacancies-title {
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 26px;
+    line-height: 1;
+    margin: 0;
+}
+
+.careers__vacancies-office {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-family: 'droid', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ccc;
+}
+
+.careers__vacancies-office > span{
+    color: #666;
+}
+
+
+.careers__applications {
+    color: #fff;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    font-family: 'klavika', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    padding: 108px 60px 75px;
+    margin: 0;
+}
+
+.careers__open-open {
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.careers__inner {
+    width: 50%;
+}
+
+.careers__open-open-text {
+    color: #fff;
+    font-family: 'droid', sans-serif;
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.6;
+    padding: 44px 180px 44px 60px;
+}
+
+.careers__button {
+    height: 80px;
+    font-size: 18px;
+    line-height: 0.8;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    margin-top: 50px;
+    background-color: transparent;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.careers__button:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
 }
