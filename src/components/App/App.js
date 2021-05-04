@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import About from '../About/About';
+import Careers from '../Careers/Careers';
 import Contact from '../Contact/Contact';
 
 import Footer from '../Footer/Footer';
@@ -18,6 +19,10 @@ function App() {
             </Route>
             <Route path="/about">
                 <About />
+                <Table />
+            </Route>
+            <Route path="/careers">
+                <Careers />
                 <Table />
             </Route>
             <Route path="/contact">

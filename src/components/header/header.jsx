@@ -35,8 +35,8 @@ function Header(props) {
                     <ul className={`menu__list ${isMain ? "_main" : ""}`}>
                         <li onClick={onClick} className="menu__item menu__item_home"><NavLink exact to="/" className="menu__link menu__link_home"></NavLink></li>
                         <li onClick={onClick} className="menu__item"><NavLink to="/about" className="menu__link">about</NavLink></li>
-                        <li onClick={onClick} className="menu__item"><a href="#" className="menu__link">careers</a></li>
-                        <li onClick={onClick} className="menu__item"><a href="#" className="menu__link">contact</a></li>
+                        <li onClick={onClick} className="menu__item"><NavLink to="/careers" className="menu__link">careers</NavLink></li>
+                        <li onClick={onClick} className="menu__item"><NavLink to="/contact" className="menu__link">contact</NavLink></li>
                         <li className="menu__item"><a href="#" className="menu__link">blog</a></li>
                         <li className="menu__item"><a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="menu__link">watch our mixtape</a></li>
                     </ul>

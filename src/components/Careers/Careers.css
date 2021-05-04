@@ -1,0 +1,89 @@
+.careers {
+    font-family: 'klavika', sans-serif;
+}
+
+.careers__title {
+    font-size: 72px;
+    line-height: 0.8;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 28px 60px;
+}
+
+.careers__filter-office-wrapper {
+    padding-left: 60px;
+}
+
+.careers__filter-office {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.careers__filter-office-item {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 0.8;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 14px 0 0;
+    margin: 0 30px 0 0;
+    color: #666;
+    transition: 0.4s;
+}
+
+.careers__filter-office-item:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.careers__filter-office-item_button {
+    padding: 0;
+    float: right;
+    transition: 0.4s;
+}
+
+
+.block-button {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 0;
+    height: 80px;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: fit-content;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 0.8;
+    padding: 0 70px 0 32px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.block-rest {
+    font-family: 'droid', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0;
+    color: #999;
+    text-transform: capitalize;
+    padding-top: 12px;
+}
+
+.block-button:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.block-button:hover .block-text {
+    color: #000;
+}
