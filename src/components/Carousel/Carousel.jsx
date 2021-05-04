@@ -25,8 +25,7 @@ const Carousel = () => {
         setCurrent(current === 0 ? length - 1 : current - 1)
         setNext(current);
     }
-    
-    console.log(prev, current, next)
+
     return (
         <section className="carousel">
             <div onClick={prevSlide} className="carousel__button carousel__button_prev">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -13,11 +14,15 @@ function App() {
             <Header />
             <Route exact path="/">
                 <Main />
+                <Table />
             </Route>
-            <Route exact path="/about">
+            <Route path="/about">
                 <About />
+                <Table />
             </Route>
-            <Table />
+            <Route path="/contact">
+                <Contact />
+            </Route>
             <Footer />
         </div>
     );
