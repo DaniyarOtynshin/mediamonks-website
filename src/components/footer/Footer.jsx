@@ -9,7 +9,7 @@ function Footer() {
                 <a href="https://www.facebook.com/mediamonks" target="blank" className="social__item">f</a>
                 <a href="https://www.linkedin.com/company/mediamonks/" className="social__item">in</a>
             </div>
-            <p className="footer__privacy">© MediaMonks | View privacy notice</p>
+            <p className="footer__privacy">© MediaMonks | <a href="https://www.mediamonks.com/privacy-notice" className="footer__privacy-link">View privacy notice</a></p>
         </footer>
     )
 }

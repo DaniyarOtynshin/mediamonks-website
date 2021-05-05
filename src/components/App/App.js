@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import About from '../About/About';
+import Blog from '../Blog/Blog';
 import Careers from '../Careers/Careers';
 import Contact from '../Contact/Contact';
 
@@ -12,23 +13,32 @@ import Table from '../Table/Table';
 function App() {
     return (
         <div className="page__content">
-            <Header />
             <Route exact path="/">
+                <Header />
                 <Main />
                 <Table />
+                <Footer />
             </Route>
             <Route path="/about">
+                <Header />
                 <About />
                 <Table />
+                <Footer />
             </Route>
             <Route path="/careers">
+                <Header />
                 <Careers />
                 <Table />
+                <Footer />
             </Route>
             <Route path="/contact">
+                <Header />
                 <Contact />
+                <Footer />
             </Route>
-            <Footer />
+            <Route path="/blog">
+                <Blog />
+            </Route>
         </div>
     );
 }

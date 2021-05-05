@@ -10,11 +10,17 @@
 }
 
 .footer__privacy {
+    font-family: 'droid', sans-serif;
     font-weight: 400;
     color: #666;
     font-size: 14px;
+    line-height: 1;
     margin: 0;
-    padding: 20px 0 20px 15px;
+    padding: 18px 20px;
+}
+
+.footer__privacy-link {
+    color: inherit;
 }
 
 .social__item {
