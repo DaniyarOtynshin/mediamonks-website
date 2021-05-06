@@ -13,32 +13,24 @@ import Table from '../Table/Table';
 function App() {
     return (
         <div className="page__content">
+            <Header />
             <Route exact path="/">
-                <Header />
                 <Main />
-                <Table />
-                <Footer />
             </Route>
             <Route path="/about">
-                <Header />
                 <About />
-                <Table />
-                <Footer />
             </Route>
             <Route path="/careers">
-                <Header />
                 <Careers />
-                <Table />
-                <Footer />
             </Route>
             <Route path="/contact">
-                <Header />
                 <Contact />
-                <Footer />
             </Route>
             <Route path="/blog">
                 <Blog />
             </Route>
+            <Table />
+            <Footer />
         </div>
     );
 }

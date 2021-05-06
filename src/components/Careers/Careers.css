@@ -1,5 +1,17 @@
 .careers {
     font-family: 'klavika', sans-serif;
+    position: relative;
+    animation: in 1s forwards;
+    top: 0;
+}
+
+@keyframes in {
+    from {
+        top: 100vw;
+    }
+    to {
+        top: 0;
+    }
 }
 
 .careers__title {

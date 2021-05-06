@@ -1,6 +1,18 @@
 .about {
     font-family: 'klavika', sans-serif;
     background-color: #fff;
+    position: relative;
+    animation: in 1s forwards;
+    top: 0;
+}
+
+@keyframes in {
+    from {
+        top: 100vw;
+    }
+    to {
+        top: 0;
+    }
 }
 
 .about__cover {
