@@ -1,7 +1,14 @@
+import React, { useEffect } from 'react';
+
 const offices = ["amsterdam", "berlin", "buenos aires", "dubai", "hilversum", "kuala lumpur", "london", "los angeles", "melbourne", "mexico city", "new delhi", "new york", "nur-sultan", "riyadh", "san francisco", "shanghai", "singapore", "sydney", "são paulo", "toronto"];
 
 
 const Careers = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0});
+    })
+
     return (
         <section className="careers">
             <h2 className="careers__title">careers</h2>

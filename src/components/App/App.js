@@ -3,11 +3,11 @@ import { Route } from 'react-router-dom';
 import About from '../About/About';
 import Blog from '../Blog/Blog';
 import Careers from '../Careers/Careers';
+import Cells from '../Cells/Cells';
 import Contact from '../Contact/Contact';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Main from '../Main/Main';
 import Table from '../Table/Table';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <div className="page__content">
             <Header />
             <Route exact path="/">
-                <Main />
+                <Cells />
             </Route>
             <Route path="/about">
                 <About />

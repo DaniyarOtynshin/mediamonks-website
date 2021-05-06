@@ -1,4 +1,11 @@
+import React, { useEffect } from 'react';
+
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0});
+    })
+
     return (
         <section className="contact">
             <h2 className="contact__title">contact</h2>

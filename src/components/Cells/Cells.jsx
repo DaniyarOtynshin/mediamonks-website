@@ -99,7 +99,7 @@ class Cells extends React.Component {
 
     render() {
         return (
-            <div className="cells">
+            <div className="cells page__cells page__section">
                 {
                     blocksInfo.map((block, index) => {
                         return (
