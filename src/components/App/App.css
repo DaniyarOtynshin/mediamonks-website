@@ -26,3 +26,10 @@
 .page__footer {
     margin-top: 160px;
 }
+
+@media screen and (min-width: 1920px) {}
+    .page__content {
+        min-height: 100%;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+}

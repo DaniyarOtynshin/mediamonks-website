@@ -1,7 +1,5 @@
 .header {
     height: 160px;
-    max-width: 1920px;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
     position: relative;

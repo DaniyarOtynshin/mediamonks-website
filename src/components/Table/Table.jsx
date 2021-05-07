@@ -10,50 +10,44 @@ const Table = () => {
                 <div className="table__row">
                     <div className="table__time _closed">23:05</div>
                     <div className="table__open _closed">hilversum</div>
-                    <div className="table__contact table__contact_address"> 228 East 45th Street, Suite 9E New York, NY 10017 United States of America 228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
+                    <div className="table__contact table__contact_address">Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands</div>
+                    <div className="table__contact table__contact_contact">hilversum@mediamonks.com +31 35 621 21 50</div>
                 </div>
                 <div className="table__row">
-                    <div className="table__time _closed">02:45</div>
+                    <div className="table__time _closed">10:00</div>
                     <div className="table__open _closed">nur-sultan</div>
-                    <div className="table__contact table__contact_address">010000 Nur-Sultan city Saryarka Avenue 6 Room 1 Office 1310 Kazakhstan</div>
-                    <div className="table__contact table__contact_contact">nursultan@mediamonks.com +7 (7172) 790389</div>
+                    <div className="table__contact table__contact_address">
+                        <span>address</span>
+                        010000 Nur-Sultan city Saryarka Avenue 6 Room 1 Office 1310 Kazakhstan
+                    </div>
+                    <div className="table__contact table__contact_contact">
+                        <span>contact</span>
+                        nursultan@mediamonks.com +7 (7172) 790389
+                    </div>
                 </div>
                 <div className="table__row">
                     <div className="table__time">23:05</div>
-                    <div className="table__open">hilversum</div>
-                    <div className="table__contact table__contact_address">228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
+                    <div className="table__open">amsterdam</div>
+                    <div className="table__contact table__contact_address">
+                        <span>address</span>
+                        Danzigerbocht 41C 1013 AM Amsterdam The Netherlands
+                    </div>
+                    <div className="table__contact table__contact_contact">
+                        <span>contact</span>
+                        amsterdam@mediamonks.com +31 20 820 24 25
+                    </div>
                 </div>
                 <div className="table__row">
-                    <div className="table__time">23:05</div>
-                    <div className="table__open">hilversum</div>
-                    <div className="table__contact table__contact_address">228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
-                </div>
-                <div className="table__row">
-                    <div className="table__time">23:05</div>
-                    <div className="table__open">hilversum</div>
-                    <div className="table__contact table__contact_address">228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
-                </div>
-                <div className="table__row">
-                    <div className="table__time">23:05</div>
-                    <div className="table__open">hilversum</div>
-                    <div className="table__contact table__contact_address">228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
-                </div>
-                <div className="table__row">
-                    <div className="table__time">23:05</div>
-                    <div className="table__open">hilversum</div>
-                    <div className="table__contact table__contact_address">228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
-                </div>
-                <div className="table__row">
-                    <div className="table__time">23:05</div>
-                    <div className="table__open">hilversum</div>
-                    <div className="table__contact table__contact_address">228 East 45th Street, Suite 9E New York, NY 10017 United States of America</div>
-                    <div className="table__contact table__contact_contact">NY 10017 United States of America</div>
+                    <div className="table__time">7:00</div>
+                    <div className="table__open">moscow</div>
+                    <div className="table__contact table__contact_address">
+                        <span>address</span>
+                        109012 per. Malyy Cherkasskiy, 2 Cabinet Lounge Moscow Russia
+                    </div>
+                    <div className="table__contact table__contact_contact">
+                        <span>contact</span>
+                        moscow@mediamonks.com +7 499 110 44 75
+                    </div>
                 </div>
             </div>
     )

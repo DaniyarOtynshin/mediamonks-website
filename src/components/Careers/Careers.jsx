@@ -1,13 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const offices = ["amsterdam", "berlin", "buenos aires", "dubai", "hilversum", "kuala lumpur", "london", "los angeles", "melbourne", "mexico city", "new delhi", "new york", "nur-sultan", "riyadh", "san francisco", "shanghai", "singapore", "sydney", "são paulo", "toronto"];
 
 
 const Careers = () => {
 
+    const [activeOffice, setActiveOffice] = useState('');
+
     useEffect(() => {
         window.scrollTo({top: 0});
     })
+
+    const onClick = (office) => {
+        setActiveOffice(office)
+    }
 
     return (
         <section className="careers">
@@ -16,9 +22,15 @@ const Careers = () => {
                 <ul className="careers__filter-office">
                     <li className="careers__filter-office-item">all</li>
                     {
-                        offices.map((office) => {
+                        offices.map((office, index) => {
                             return (
-                                <li className="careers__filter-office-item">{office}</li>
+                                <li
+                                key={index}
+                                onClick={() => onClick(office)}
+                                className={`careers__filter-office-item ${activeOffice === office ? "_active" : ""}`}
+                                >
+                                    {office}
+                                </li>
                             )
                         })
                     }
@@ -33,7 +45,7 @@ const Careers = () => {
                 </ul>
             </div>
             <ul className="careers__vacancies">
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _1">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -42,7 +54,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _2">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -51,7 +63,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _3">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -60,7 +72,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _4">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -69,7 +81,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _5">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -78,7 +90,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _6">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -87,7 +99,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _7">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -96,7 +108,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _8">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">
@@ -105,7 +117,7 @@ const Careers = () => {
                         </span>
                     </div>
                 </li>
-                <li className="careers__vacancies-item">
+                <li className="careers__vacancies-item _9">
                     <div className="careers__vacancies-content">
                         <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
                         <span className="careers__vacancies-office">

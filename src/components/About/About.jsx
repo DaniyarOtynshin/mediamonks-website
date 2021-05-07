@@ -4,18 +4,12 @@ import Carousel from '../Carousel/Carousel';
 
 const About = () => {
 
-    const [scroll, setScroll] = useState(false);
-
     useEffect(() => {
         window.scrollTo({top: 0});
     })
 
-    const scrollStyle = {
-        top: '100vw',
-    }
-
     return (
-        <section className="page__section page__about about" style={scroll ? scrollStyle : null}>
+        <section className="page__section page__about about">
             <img src={ headerPath } alt="Header" className="about__cover"/>
             <div className="about__content content">
                 <article className="content__text">

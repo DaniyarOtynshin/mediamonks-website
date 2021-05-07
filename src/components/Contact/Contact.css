@@ -7,7 +7,7 @@
 
 @keyframes in {
     from {
-        top: 100vw;
+        top: 100vh;
     }
     to {
         top: 0;

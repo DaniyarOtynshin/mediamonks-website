@@ -4,16 +4,4 @@
     width: 100%;
     margin: 0;
     column-gap: 1px;
-    position: relative;
-    animation: in 1s forwards;
-    top: 0;
-}
-
-@keyframes in {
-    from {
-        top: 100vw;
-    }
-    to {
-        top: 0;
-    }
 }
