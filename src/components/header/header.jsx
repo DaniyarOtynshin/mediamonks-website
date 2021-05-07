@@ -5,6 +5,7 @@ function Header(props) {
 
     const [isMain, setIsMain] = useState(true);
     const [state, setState] = useState(false);
+    const [isActive, setIsActive] = useState(false);
     const logo = useRef(null);
 
     useEffect(() => {
@@ -13,8 +14,23 @@ function Header(props) {
       }
     }, []);
 
+    const handleMenuButton = () => {
+        isActive
+        ? handleCloseMenu()
+        : handleOpenMenu()
+    }
+
+    const handleCloseMenu = () => {
+        setIsActive(false);
+    }
+
+    const handleOpenMenu = () => {
+        setIsActive(true);
+    }
+
     const onLinkClick = () => {
         setIsMain(false);
+        handleMenuButton()
     }
 
     const onHomeClick = () => {
@@ -31,7 +47,10 @@ function Header(props) {
     return (
         <header className="page__section page__header header">
             <div className={`menu header__menu ${state ? "header__menu_active" : ""}`}>
-                <div className="menu__body">
+                <div onClick={handleMenuButton} class={ `menu__icon${isActive ? " menu__icon_active" : ""}` }>
+                        <span></span>
+                    </div>
+                <div className={ `menu__body${isActive ? " menu__body_active" : ""}` }>
                     <ul className="menu__list">
                         <li onClick={onHomeClick} className={`menu__toggle-container ${isMain ? "_hidden" : ""}`}>
                             <NavLink to="/" className="menu__toggle-link">
@@ -68,6 +87,7 @@ function Header(props) {
                         </li>
                     </ul>
                 </div>
+                <div className="menu__body_background" />
             </div>
             <div ref={logo} className={`header__logo ${state ? 'header__logo_active' : ''}`}>
                 media monks
