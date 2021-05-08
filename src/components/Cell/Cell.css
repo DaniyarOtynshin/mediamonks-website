@@ -94,6 +94,8 @@
     color: #fff;
     margin: 0;
     z-index: 3;
+    padding-bottom: 3.75px;
+    border-bottom: 1px solid #fff;
 }
 
 .cell__name {
@@ -108,6 +110,10 @@
     color: #fff;
     margin: 0;
     z-index: 3;
+}
+
+.cell._active .cell__number {
+    border-bottom: none;
 }
 
 .cell._active .x-top {
@@ -197,7 +203,7 @@
         width: 0;
     }
     100% {
-        width: 15px;
+        width: 12px;
     }
 }
 
