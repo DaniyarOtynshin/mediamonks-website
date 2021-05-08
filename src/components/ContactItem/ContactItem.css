@@ -80,3 +80,18 @@
 .contact-item__data-info:last-of-type {
     margin-bottom: 28px;
 }
+
+@media (max-width: 960px) {
+    .contact-item {
+        flex-direction: column;
+    }
+    .contact-item__name {
+        width: 100%;
+        font-size: 56px;
+        border-bottom: 1px solid #333;
+    }
+    .contact-item__data {
+        width: 100%;
+        padding: 55px 60px;
+    }
+}
