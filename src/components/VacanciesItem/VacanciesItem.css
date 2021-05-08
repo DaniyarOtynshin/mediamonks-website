@@ -51,3 +51,31 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 1120px) {
+    .vacancies-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 680px) {
+    .vacancies-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .vacancies-item {
+        height: 140px;
+    }
+    .vacancies-title {
+        font-size: 14px;
+    }
+    .vacancies-office {
+        font-size: 12px;
+        line-height: 11px;
+    }
+    .vacancies-office > span{
+        margin-top: 12px;
+    }
+}
