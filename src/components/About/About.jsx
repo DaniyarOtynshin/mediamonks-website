@@ -3,6 +3,7 @@ import headerBigPath from '../../assets/about_header.jpg';
 import headerMediumPath from '../../assets/about_header_medium.jpg';
 import headerSmallPath from '../../assets/about_header_small.jpg';
 import Carousel from '../Carousel/Carousel';
+import MonksStat from '../MonksStat/MonksStat';
 
 const About = () => {
 
@@ -32,30 +33,7 @@ const About = () => {
                     <a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="content__link">watch our mixtape</a>
                 </article>
                 <Carousel />
-                <div className="about__info info">
-                    <ul className="info__data data">
-                        <li className="data__item item">
-                            <span className="item__title">Founded in</span>
-                            <span className="item__value">2001</span>
-                        </li>
-                        <li className="data__item item">
-                            <span className="item__title">Monks</span>
-                            <span className="item__value">2000+</span>
-                        </li>
-                        <li className="data__item item">
-                            <span className="item__title">Offices</span>
-                            <span className="item__value">24</span>
-                        </li>
-                        <li className="data__item item">
-                            <span className="item__title">Cannes Lions</span>
-                            <span className="item__value">131</span>
-                        </li>
-                        <li className="data__item item">
-                            <span className="item__title">FWAs</span>
-                            <span className="item__value">250+</span>
-                        </li>
-                    </ul>
-                </div>
+                <MonksStat />
                 <div className="social social_about">
                     <span className="social__follow">follow us</span>
                     <a href="https://www.instagram.com/mediamonks/" target="blank" className="social__item social__item_about">gram</a>
