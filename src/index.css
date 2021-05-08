@@ -12,5 +12,7 @@
 @import url('./components/Careers/Careers.css');
 @import url('./components/Vacancies/Vacancies.css');
 @import url('./components/VacanciesItem/VacanciesItem.css');
+@import url('./components/FilterOffice/FilterOffice.css');
+@import url('./components/FIlterOfficeItem/FilterOfficeItem.css');
 @import url('./components/Blog/Blog.css');
 @import url('./components/MonksStat/MonksStat.css');
