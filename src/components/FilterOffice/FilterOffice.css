@@ -56,3 +56,9 @@
 .block-button:hover .block-text {
     color: #000;
 }
+
+@media (max-width: 960px) {
+    .filter-office-wrapper {
+        display: none;
+    }
+}
