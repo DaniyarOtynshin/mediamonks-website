@@ -70,6 +70,7 @@
     display: inline-block;
     width: 46px;
     height: 24px;
+    z-index: -1;
 }
 
 .menu__toggle-top {

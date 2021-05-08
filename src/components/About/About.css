@@ -74,6 +74,7 @@
 
 .data {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -131,4 +132,28 @@
     text-transform: uppercase;
     margin: 0 40px;
     color: #666;
+}
+
+@media (max-width: 1470px) {
+    
+    .data {
+        justify-content: flex-start;
+    }
+    .data__item {
+        flex: 0 0 50%;
+        border-left: none;
+        padding: 0 40px 20px;
+    }
+
+    .item__value {
+        font-size: 80px;
+    }
+
+    .data__item:first-child {
+        padding: 0 40px 20px;
+    }
+    
+    .data__item:last-child {
+        padding: 0 40px 20px
+    }
 }

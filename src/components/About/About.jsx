@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
-import headerPath from '../../assets/about_header.jpg';
+import headerBigPath from '../../assets/about_header.jpg';
+import headerMediumPath from '../../assets/about_header_medium.jpg';
+import headerSmallPath from '../../assets/about_header_small.jpg';
 import Carousel from '../Carousel/Carousel';
 
 const About = () => {
@@ -10,7 +12,11 @@ const About = () => {
 
     return (
         <section className="page__section page__about about">
-            <img src={ headerPath } alt="Header" className="about__cover"/>
+            <picture>
+                <source srcset={headerSmallPath} media="(max-width: 640px)" />
+                <source srcset={headerMediumPath} media="(max-width: 960px)" />
+                <img src={headerBigPath} alt="Header" className="about__cover"/>
+            </picture>
             <div className="about__content content">
                 <article className="content__text">
                     <h1 className="content__title">about</h1>
