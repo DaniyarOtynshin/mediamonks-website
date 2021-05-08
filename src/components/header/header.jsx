@@ -52,8 +52,8 @@ function Header(props) {
                     </div>
                 <div className={ `menu__body${isActive ? " menu__body_active" : ""}` }>
                     <ul className="menu__list">
-                        <li onClick={onHomeClick} className={`menu__toggle-container ${isMain ? "_hidden" : ""}`}>
-                            <NavLink to="/" className="menu__toggle-link">
+                        <li className={`menu__toggle-container ${isMain ? "_hidden" : ""}`}>
+                            <NavLink onClick={onHomeClick} to="/" className="menu__toggle-link">
                                 <div className="menu__toggle">
                                     <div className="menu__toggle-top">
                                         <span></span>
@@ -70,17 +70,17 @@ function Header(props) {
                                 </div>
                             </NavLink>
                         </li>
-                        <li onClick={onLinkClick} className="menu__item">
-                            <NavLink to="/about" className="menu__link">about</NavLink>
+                        <li className="menu__item">
+                            <NavLink onClick={onLinkClick} to="/about" className="menu__link">about</NavLink>
                         </li>
-                        <li onClick={onLinkClick} className="menu__item">
-                            <NavLink to="/careers" className="menu__link">careers</NavLink>
+                        <li className="menu__item">
+                            <NavLink onClick={onLinkClick} to="/careers" className="menu__link">careers</NavLink>
                         </li>
-                        <li onClick={onLinkClick} className="menu__item">
-                            <NavLink to="/contact" className="menu__link">contact</NavLink>
+                        <li className="menu__item">
+                            <NavLink onClick={onLinkClick} to="/contact" className="menu__link">contact</NavLink>
                         </li>
-                        <li onClick={onLinkClick} className="menu__item">
-                            <NavLink to="#" className="menu__link">blog (coming soon ...)</NavLink>
+                        <li className="menu__item">
+                            <NavLink onClick={onLinkClick} to="#" className="menu__link">blog (coming soon ...)</NavLink>
                         </li>
                         <li className="menu__item">
                             <a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" target="blank" className="menu__link">watch our mixtape</a>
