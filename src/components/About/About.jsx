@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import headerBigPath from '../../assets/about_header.jpg';
 import headerMediumPath from '../../assets/about_header_medium.jpg';
 import headerSmallPath from '../../assets/about_header_small.jpg';

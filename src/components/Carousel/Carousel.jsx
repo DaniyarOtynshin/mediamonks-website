@@ -29,10 +29,10 @@ const Carousel = () => {
     return (
         <section className="carousel">
             <div onClick={prevSlide} className="carousel__button carousel__button_prev">
-                <img src={prevPath} alt="prev" className="carousel__prev"/>
+                <img src={prevPath} alt="prev" className="carousel__button-img"/>
             </div>
             <div onClick={nextSlide} className="carousel__button carousel__button_next">
-                <img src={nextPath} alt="next" className="carousel__next"/>
+                <img src={nextPath} alt="next" className="carousel__button-img"/>
             </div>
             <div className="carousel__slider">
                 {
@@ -50,7 +50,8 @@ const Carousel = () => {
                                             : next === index
                                                 ? "carousel__image _right"
                                                 : "carousel__image"
-                                    }`}/>
+                                    }`}
+                                />
                         )
                     })
                 }
