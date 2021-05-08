@@ -26,3 +26,9 @@
         top: 0;
     }
 }
+
+@media (max-width: 960px) {
+    .contact__title {
+        font-size: 56px;
+    }
+}
