@@ -67,3 +67,10 @@
         border: none;
     }
 }
+
+@media (max-width: 760px) {
+    .data__item {
+        flex: 0 0 100%;
+        border: none;
+    }
+}
