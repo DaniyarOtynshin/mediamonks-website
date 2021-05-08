@@ -13,6 +13,8 @@
     left: 0;
     background-color: #1a1a1a; /* sticky */
     z-index: 4;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
 }
 
 .header__menu_active {
