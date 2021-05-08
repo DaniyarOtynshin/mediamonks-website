@@ -14,17 +14,6 @@
     }
 }
 
-@keyframes inItem {
-    from {
-        left: 100vw;
-        opacity: 0;
-    }
-    to {
-        left: 0;
-        opacity: 1;
-    }
-}
-
 .careers__title {
     font-size: 72px;
     line-height: 0.8;
@@ -122,82 +111,30 @@
     color: #000;
 }
 
-.careers__vacancies {
-    border-top: 1px solid #333;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-.careers__vacancies-item {
-    height: 320px;
-    width: 25%;
-    border-right: 1px solid #333;
-    border-bottom: 1px solid #333;
-    list-style: none;
-    position: relative;
-    opacity: 0;
-    animation: inItem 1s forwards;
-}
-.careers__vacancies-item._2 {
+.vacancies-item._2 {
     animation: inItem 1s forwards 0s;
 }
-.careers__vacancies-item._3 {
+.vacancies-item._3 {
     animation: inItem 1s forwards 0.2s;
 }
-.careers__vacancies-item._4 {
+.vacancies-item._4 {
     animation: inItem 1s forwards 0.4s
 }
-.careers__vacancies-item._5 {
+.vacancies-item._5 {
     animation: inItem 1s forwards 0.6s;
 }
-.careers__vacancies-item._6 {
+.vacancies-item._6 {
     animation: inItem 1s forwards 0.8s;
 }
-.careers__vacancies-item._7 {
+.vacancies-item._7 {
     animation: inItem 1s forwards 1s;
 }
-.careers__vacancies-item._8 {
+.vacancies-item._8 {
     animation: inItem 1s forwards 1.2s;
 }
-.careers__vacancies-item._9 {
+.vacancies-item._9 {
     animation: inItem 1s forwards 1.4s;
 }
-
-.careers__vacancies-content {
-    padding: 19px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.careers__vacancies-title {
-    font-style: italic;
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 0;
-    font-size: 26px;
-    line-height: 1;
-    margin: 0;
-}
-
-.careers__vacancies-office {
-    display: flex;
-    flex-direction: column;
-    font-style: italic;
-    font-family: 'droid', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ccc;
-}
-
-.careers__vacancies-office > span{
-    color: #666;
-}
-
 
 .careers__applications {
     color: #fff;

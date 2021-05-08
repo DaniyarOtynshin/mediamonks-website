@@ -1,6 +1,6 @@
-const MonksStat = () => {
+const MonksStat = (props) => {
     return (
-        <div className="about__info monks-stat">
+        <section className={`monks-stat ${props.className}`}>
             <ul className="monks-stat__data data">
                 <li className="data__item item">
                     <span className="item__title">Founded in</span>
@@ -23,7 +23,7 @@ const MonksStat = () => {
                     <span className="item__value">250+</span>
                 </li>
             </ul>
-        </div>
+        </section>
     )
 }
 

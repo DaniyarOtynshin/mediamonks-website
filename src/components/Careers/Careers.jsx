@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Vacancies from '../Vacancies/Vacancies';
 
 const offices = ["amsterdam", "berlin", "buenos aires", "dubai", "hilversum", "kuala lumpur", "london", "los angeles", "melbourne", "mexico city", "new delhi", "new york", "nur-sultan", "riyadh", "san francisco", "shanghai", "singapore", "sydney", "são paulo", "toronto"];
 
@@ -44,89 +45,7 @@ const Careers = () => {
                     </li>
                 </ul>
             </div>
-            <ul className="careers__vacancies">
-                <li className="careers__vacancies-item _1">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _2">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _3">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _4">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _5">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _6">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _7">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _8">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-                <li className="careers__vacancies-item _9">
-                    <div className="careers__vacancies-content">
-                        <h2 className="careers__vacancies-title">Account Manager at MediaMonks AMS</h2>
-                        <span className="careers__vacancies-office">
-                            Amsterdam
-                            <span>Client Services</span>
-                        </span>
-                    </div>
-                </li>
-            </ul>
+            <Vacancies />
             <h2 className="careers__applications">open applications</h2>
             <div className="careers__open-open">
                 <div className="careers__inner">

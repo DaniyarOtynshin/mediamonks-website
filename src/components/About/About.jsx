@@ -33,7 +33,7 @@ const About = () => {
                     <a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="content__link">watch our mixtape</a>
                 </article>
                 <Carousel />
-                <MonksStat />
+                <MonksStat className="about__info" />
                 <div className="social social_about">
                     <span className="social__follow">follow us</span>
                     <a href="https://www.instagram.com/mediamonks/" target="blank" className="social__item social__item_about">gram</a>
