@@ -5,15 +5,6 @@
     top: 0;
 }
 
-@keyframes in {
-    from {
-        top: 100vh;
-    }
-    to {
-        top: 0;
-    }
-}
-
 .contact._change {
     top: 100vw;
 }
@@ -25,4 +16,13 @@
     text-transform: uppercase;
     margin: 0;
     padding: 28px 60px 75px;
+}
+
+@keyframes in {
+    from {
+        top: 100vh;
+    }
+    to {
+        top: 0;
+    }
 }

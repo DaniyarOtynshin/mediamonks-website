@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Header(props) {
-
+function Header() {
     const [isMain, setIsMain] = useState(true);
     const [state, setState] = useState(false);
     const [isActive, setIsActive] = useState(false);
@@ -47,7 +46,7 @@ function Header(props) {
     return (
         <header className="page__section page__header header">
             <div className={`menu header__menu ${state ? "header__menu_active" : ""}`}>
-                <div onClick={handleMenuButton} class={ `menu__icon${isActive ? " menu__icon_active" : ""}` }>
+                <div onClick={handleMenuButton} className={ `menu__icon${isActive ? " menu__icon_active" : ""}` }>
                         <span></span>
                     </div>
                 <div className={ `menu__body${isActive ? " menu__body_active" : ""}` }>
