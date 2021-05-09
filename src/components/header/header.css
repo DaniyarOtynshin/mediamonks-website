@@ -131,8 +131,16 @@
     margin: 0;
 }
 
-@media (max-width: 920px) {
+.menu__icon {
+    position: absolute;
+    display: none;
+}
+
+
+@media (max-width: 1090px) {
     .menu__icon {
+        border: none;
+        background-color: transparent;
         margin: 20px 0 0 20px;
         z-index: 7;
         display: block;

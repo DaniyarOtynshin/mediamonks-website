@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
     const [isMain, setIsMain] = useState(true);
-    const [state, setState] = useState(false);
+    const [isScroll, setIsScroll] = useState(false);
     const [isActive, setIsActive] = useState(false);
     const logo = useRef(null);
 
@@ -29,7 +29,6 @@ function Header() {
 
     const onLinkClick = () => {
         setIsMain(false);
-        handleMenuButton()
     }
 
     const onHomeClick = () => {
@@ -40,15 +39,17 @@ function Header() {
         const elementHeight = logo.current.offsetHeight;
         const elementStart = 6;
         let elementPoint = elementHeight / elementStart;
-        window.pageYOffset > elementPoint ? setState(true) : setState(false)
+        window.pageYOffset > elementPoint ? setIsScroll(true) : setIsScroll(false)
     };
+
+    console.log(isActive)
 
     return (
         <header className="page__section page__header header">
-            <div className={`menu header__menu ${state ? "header__menu_active" : ""}`}>
-                <div onClick={handleMenuButton} className={ `menu__icon${isActive ? " menu__icon_active" : ""}` }>
-                        <span></span>
-                    </div>
+            <div className={`menu header__menu ${isScroll ? "header__menu_active" : ""}`}>
+                <button onClick={handleMenuButton} className={ `menu__icon${isActive ? " menu__icon_active" : ""}` }>
+                    <span></span>
+                </button>
                 <div className={ `menu__body${isActive ? " menu__body_active" : ""}` }>
                     <ul className="menu__list">
                         <li className={`menu__toggle-container ${isMain ? "_hidden" : ""}`}>
@@ -88,7 +89,7 @@ function Header() {
                 </div>
                 <div className="menu__body_background" />
             </div>
-            <div ref={logo} className={`header__logo ${state ? 'header__logo_active' : ''}`}>
+            <div ref={logo} className={`header__logo ${isScroll ? 'header__logo_active' : ''}`}>
                 media monks
             </div>
         </header>
