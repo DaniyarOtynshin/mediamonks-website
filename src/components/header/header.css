@@ -136,6 +136,11 @@
     display: none;
 }
 
+.menu__icon_active + .menu__body .menu__toggle-container {
+    display: none;
+}
+
+
 
 @media (max-width: 1090px) {
     .menu__icon {
@@ -194,6 +199,11 @@
         flex-direction: column;
     }
 
+    .menu__link {
+        color: #fff;
+        font-size: 30px;
+    }
+
     .menu__body {
         position: fixed;
         top: 0;
@@ -230,8 +240,7 @@
 
 @media (max-width: 748px) {
     .menu__link {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 40px;
     }
 
     .menu__button {
@@ -254,5 +263,9 @@
 
     .menu__item {
         padding: 0 0 24px;
+    }
+
+    .header__logo {
+        display: none;
     }
 }

@@ -42,8 +42,6 @@ function Header() {
         window.pageYOffset > elementPoint ? setIsScroll(true) : setIsScroll(false)
     };
 
-    console.log(isActive)
-
     return (
         <header className="page__section page__header header">
             <div className={`menu header__menu ${isScroll ? "header__menu_active" : ""}`}>
