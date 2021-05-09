@@ -73,6 +73,7 @@ let contacts = [
 const Contact = () => {
     useEffect(() => {
         window.scrollTo({top: 0});
+        document.title = "MediaMonksClone | Contact"
     })
 
     return (

@@ -9,6 +9,7 @@ const About = () => {
 
     useEffect(() => {
         window.scrollTo({top: 0});
+        document.title = "MediaMonksClone | About"
     })
 
     return (
