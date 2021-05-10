@@ -29,11 +29,11 @@ function Header() {
 
     const onLinkClick = () => {
         setIsMain(false);
+        handleCloseMenu();
     }
 
     const onHomeClick = () => {
         setIsMain(true);
-        setIsActive(false);
     }
 
     const onScroll = () => {

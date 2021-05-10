@@ -53,19 +53,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 2px;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #666;
     width: 225px;
     height: 80px;
     border: 2px solid #000;
+    position: relative;
 }
 
-.content__link:hover {
+.content__link > p {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #666;
+    z-index: 2;
+}
+
+.content__link > span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     background-color: #000;
+}
+
+.content__link:hover > span {
+    animation: hover 0.05s forwards;
 }
 
 .about__info {

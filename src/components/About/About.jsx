@@ -31,7 +31,10 @@ const About = () => {
                     <p className="content__paragraph">
                     Founded in 2001 and rooted in digital, you can find MediaMonks anywhere on the Web as well as in San Francisco, Los Angeles, Mountain View, Sandpoint, Toronto, New York, Mexico City, Buenos Aires, São Paulo, Dublin, London, Amsterdam, Hilversum, Cape Town, Stockholm, Kiev, Dnepr, Moscow, Nur-Sultan, Dubai, Mumbai, Bangalore, Delhi, Singapore, Shanghai, Sydney, Melbourne, and Auckland.
                     </p>
-                    <a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="content__link">watch our mixtape</a>
+                    <a href="https://www.youtube.com/watch?v=JNU8DhMKryI&ab_channel=MediaMonks" className="content__link">
+                        <p>watch our mixtape</p>
+                        <span />
+                    </a>
                 </article>
                 <Carousel />
                 <MonksStat className="about__info" />
