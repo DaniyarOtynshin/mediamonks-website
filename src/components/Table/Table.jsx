@@ -1,10 +1,3 @@
-const data = [
-    {
-        name: "hilversum",
-        address: "Oude Amersfoortseweg 125 1212AA Hilversum The Netherlands",
-    }
-]
-
 const Table = () => {
     return (
         <div className="page__section page__table table">

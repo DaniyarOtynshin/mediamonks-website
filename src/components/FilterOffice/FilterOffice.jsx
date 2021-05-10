@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FilterOfficeItem from "../FIlterOfficeItem/FilterOfficeItem"
 
-const offices = ["amsterdam", "berlin", "buenos aires", "dubai", "hilversum", "kuala lumpur", "london", "los angeles", "melbourne", "mexico city", "new delhi", "new york", "nur-sultan", "riyadh", "san francisco", "shanghai", "singapore", "sydney", "são paulo", "toronto"];
+import { offices } from '../../data/data';
 
 const FilterOffice = () => {
 
