@@ -40,9 +40,18 @@ const About = () => {
                 <MonksStat className="about__info" />
                 <div className="social social_about">
                     <span className="social__follow">follow us</span>
-                    <a href="https://www.instagram.com/mediamonks/" target="blank" className="social__item social__item_about">gram</a>
-                    <a href="https://twitter.com/mediamonks" target="blank" className="social__item social__item_about">t</a>
-                    <a href="https://www.facebook.com/mediamonks" target="blank" className="social__item social__item_about">f</a>
+                    <a href="https://www.instagram.com/mediamonks/" target="blank" className="social__item social__item_about">
+                        <p>gram</p>
+                        <span />
+                    </a>
+                    <a href="https://twitter.com/mediamonks" target="blank" className="social__item social__item_about">
+                        <p>t</p>
+                        <span />
+                    </a>
+                    <a href="https://www.facebook.com/mediamonks" target="blank" className="social__item social__item_about">
+                        <p>f</p>
+                        <span />
+                    </a>
                 </div>
             </div>
         </section>
